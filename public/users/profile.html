@@ -1,0 +1,90 @@
+Welcome! Please fill in the following to complete your registration.<br/>
+
+<a ui-sref="home">Skip for now, I will fill in later.</a><br/><br/>
+
+<form>
+    <div class="form-group">
+        <label>What Primary School is your child currently in?</label>
+        <select class="form-control"
+            ng-options="sch.school for sch in profileCtrl.listOfPrimarySchools"
+            ng-model="fields.school" name="school"
+            required>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label>What year is your child currently in?</label>
+        <select class="form-control"
+            ng-options="year for year in profileCtrl.listOfPrimaryYears"
+            ng-model="fields.year" name="year"
+            required>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label>What year is your child's gender?</label>
+        <select class="form-control"
+            ng-options="gender for gender in profileCtrl.listOfGenders"
+            ng-model="fields.gender" name="gender"
+            required>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label>Rank the primary schools of your preference</label>
+        <select class="form-control"
+            ng-options="sch.school for sch in profileCtrl.listOfPrimarySchools"
+            ng-model="fields.choiceOne" name="choiceOne"
+            required>
+        </select>
+        
+        <br/>
+        
+        <select class="form-control"
+            ng-options="sch.school for sch in profileCtrl.listOfPrimarySchools"
+            ng-model="fields.choiceTwo" name="choiceTwo"
+            required>
+        </select>
+        
+        <br/>
+        
+        <select class="form-control"
+            ng-options="sch.school for sch in profileCtrl.listOfPrimarySchools"
+            ng-model="fields.choiceThree" name="choiceThree"
+            required>
+        </select>
+        
+        <br/>
+        
+        <select class="form-control"
+            ng-options="sch.school for sch in profileCtrl.listOfPrimarySchools"
+            ng-model="fields.choiceFour" name="choiceFour"
+            required>
+        </select>
+        
+        <br/>
+        
+        <select class="form-control"
+            ng-options="sch.school for sch in profileCtrl.listOfPrimarySchools"
+            ng-model="fields.choiceFive" name="choiceFive"
+            required>
+        </select>
+        
+        <br/>
+        
+        <select class="form-control"
+            ng-options="sch.school for sch in profileCtrl.listOfPrimarySchools"
+            ng-model="fields.choiceSix" name="choiceSix"
+            required>
+        </select>
+    </div>
+    
+    
+    <button type="submit">
+        Submit
+    </button>
+    
+    
+
+
+</form>

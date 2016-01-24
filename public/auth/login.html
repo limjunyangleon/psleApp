@@ -1,0 +1,16 @@
+<div class="logo"></div>
+
+<div class="login-block">
+    
+    <form ng-submit="authCtrl.login()">
+        
+        <h1>Login</h1>
+        <input ng-model="authCtrl.user.email" type="email" value="" placeholder="Email" id="username"/>
+        <input ng-model="authCtrl.user.password" type="password" value="" placeholder="Password" id="password" />
+        <div ng-show="authCtrl.error" class="error">{{ authCtrl.error.message }}</div>
+        <div class="link"><a ui-sref="register">Don't have an account? Click here to register</a></div>
+        <button type="submit">Login</button>
+        
+    </form>
+    
+</div>
